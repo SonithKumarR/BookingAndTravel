@@ -1,0 +1,193 @@
+.profile-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .edit-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .profile-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .profile-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f8f9fa;
+  }
+  
+  .profile-card, .preferences-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .info-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .info-group svg {
+    color: #667eea;
+    font-size: 1.3rem;
+    min-width: 24px;
+    margin-top: 5px;
+  }
+  
+  .info-group > div {
+    flex: 1;
+  }
+  
+  .info-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .info-group p {
+    margin: 0;
+    color: #555;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    min-height: 40px;
+  }
+  
+  .info-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .info-group input:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  .info-group input:disabled {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+  }
+  
+  .preference {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f8f9fa;
+  }
+  
+  .preference:last-child {
+    border-bottom: none;
+  }
+  
+  .preference label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .preference input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .preference > label:not(label[for]) {
+    font-weight: 600;
+    color: #333;
+    cursor: default;
+  }
+  
+  .preference select {
+    padding: 10px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    max-width: 200px;
+  }
+  
+  .preference select:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  
+  .preference select:disabled {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 576px) {
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    
+    .edit-btn {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .info-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .preference select {
+      max-width: 100%;
+    }
+  }
